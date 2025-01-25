@@ -26,7 +26,7 @@ public class AttackSet1 : MonoBehaviour
             yield return new WaitForSeconds(delayBetweenAttacks);
             yield return true;
         }
-
+        yield return true;
         Debug.Log("All attacks in the sequence are complete.");
     }
 }
