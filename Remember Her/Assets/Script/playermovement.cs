@@ -151,6 +151,19 @@ public class playermovement : MonoBehaviour, Takedamages
 
     public void Takedamages(float damage)
     {
+        /*if (onPer)
+        {
+
+        }
+        if (onGua)
+        {
+            float chipp = damage * (3 / 100);
+        }
+        else
+        {
+            currHp -= damage;
+        }*/
+
         currHp -= damage;
         if (currHp > 0)
         {
