@@ -21,14 +21,18 @@ public class CheckBox : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        detection.Add(collider);
+        if (collider.name.Equals("Wall"))
+        {
+            detection.Add(collider);
+        }
     }
     private void OnTriggerExit2D(Collider2D collider)
     {
         detection.Remove(collider);
     }
 
-    public void Check() {
+    public void Check()
+    {
         IsWall();
     }
 

@@ -21,14 +21,18 @@ public class Detection : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        detection.Add(collider);
+        if (collider.name.Equals("Player"))
+        {
+            detection.Add(collider);
+        }
     }
     private void OnTriggerExit2D(Collider2D collider)
     {
         detection.Remove(collider);
     }
 
-    public void Check() {
+    public void Check()
+    {
         IsPlayer();
     }
 

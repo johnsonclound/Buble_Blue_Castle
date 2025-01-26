@@ -13,9 +13,24 @@ public class Enemy_2 : MonoBehaviour, Move_Ment
     private float time_now;
     private Vector2 walk;
     public int count;
+    private int count_now;
 
     public Detection detection;
     public CheckBox checkbox;
+
+    public Vision vision;
+
+    public void Follow_Object()
+    {
+        if (vision.all_vision.Count > 0 && vision.all_vision[0].transform.localPosition.x > gameObject.transform.localPosition.x && WalkDirection == Walk_Direction.Left)
+        {
+            Flip_Direction();
+        }
+        else if (vision.all_vision.Count > 0 && vision.all_vision[0].transform.localPosition.x < gameObject.transform.localPosition.x && WalkDirection == Walk_Direction.Right)
+        {
+            Flip_Direction();
+        }
+    }
 
     public Walk_Direction WalkDirection
     {
@@ -70,6 +85,7 @@ public class Enemy_2 : MonoBehaviour, Move_Ment
         rb_2d = GetComponent<Rigidbody2D>();
         walk = Vector2.right;
         time_now = time;
+        count_now = count;
         detection.set_animater(animator);
         checkbox.set_animater(animator);
     }
@@ -78,20 +94,21 @@ public class Enemy_2 : MonoBehaviour, Move_Ment
     {
         Count();
         move();
+        Follow_Object();
     }
 
     void Count()
     {
-        time_now -= 0.1f;
-        if (time_now <= 0)
+        time -= 0.1f;
+        if (time <= 0)
         {
-            count += 1;
-            time_now = time;
+            count -= 1;
+            time = time_now;
         }
 
-        if (count >= 10)
+        if (count <= 0)
         {
-            count = 0;
+            count = count_now;
             set_move();
         }
     }

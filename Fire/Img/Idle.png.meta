@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bc02616b617a3524b8da3584898c5745
+guid: 482303a1c07513542ab223acbee04618
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,106 +97,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack_0
+      name: Idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 80
-        height: 80
-      alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecd80565da7a6044ea653c90859793eb
-      internalID: -1772571995
+      spriteID: 8ef38eff092a7e9438cf0e96d74b808c
+      internalID: -1418115774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_1
+      name: Idle_1
       rect:
         serializedVersion: 2
-        x: 80
+        x: 32
         y: 0
-        width: 80
-        height: 80
-      alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb30edf7d60532c40a04b4e93362d9e1
-      internalID: -1533072550
+      spriteID: 6daf8ac272a8e0c488041ecc3e389f56
+      internalID: -1504643414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_2
+      name: Idle_2
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 0
-        width: 80
-        height: 80
-      alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8585c8bba4cec334486b569a161feb5c
-      internalID: 618101207
+      spriteID: 2935cda2801032a42bd78272005cab4f
+      internalID: 1484078248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_3
+      name: Idle_3
       rect:
         serializedVersion: 2
-        x: 240
+        x: 96
         y: 0
-        width: 80
-        height: 80
-      alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b08ddcffb055b3429687e5b6182fea1
-      internalID: -2039120956
+      spriteID: 998f689e4b8f1eb43b3f2e3e1bd2e735
+      internalID: 1889141511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_4
+      name: Idle_4
       rect:
         serializedVersion: 2
-        x: 320
+        x: 128
         y: 0
-        width: 80
-        height: 80
-      alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3541de0e2b75aa4099fb5dbee5d545a
-      internalID: -1074692367
+      spriteID: 2f26ab81277374141bc2434c4a41fb88
+      internalID: -1422008719
       vertices: []
       indices: 
       edges: []
@@ -212,11 +212,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Attack_0: -1772571995
-      Attack_1: -1533072550
-      Attack_2: 618101207
-      Attack_3: -2039120956
-      Attack_4: -1074692367
+      Idle_0: -1418115774
+      Idle_1: -1504643414
+      Idle_2: 1484078248
+      Idle_3: 1889141511
+      Idle_4: -1422008719
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bc02616b617a3524b8da3584898c5745
+guid: 49949ff62c5b47d41babe29e738fd79f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,106 +97,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack_0
+      name: Boom_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 80
-        height: 80
+        width: 128
+        height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecd80565da7a6044ea653c90859793eb
-      internalID: -1772571995
+      spriteID: 9e6e45d8930fa7049a1a129bddd8347e
+      internalID: 2090318988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_1
+      name: Boom_1
       rect:
         serializedVersion: 2
-        x: 80
+        x: 128
         y: 0
-        width: 80
-        height: 80
+        width: 128
+        height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb30edf7d60532c40a04b4e93362d9e1
-      internalID: -1533072550
+      spriteID: 87cf76e3d9a9af5448c1f26a6048013b
+      internalID: -713319545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_2
+      name: Boom_2
       rect:
         serializedVersion: 2
-        x: 160
+        x: 256
         y: 0
-        width: 80
-        height: 80
+        width: 128
+        height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8585c8bba4cec334486b569a161feb5c
-      internalID: 618101207
+      spriteID: 5bc73f3131e9022489fb40239a862171
+      internalID: -1241084525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_3
+      name: Boom_3
       rect:
         serializedVersion: 2
-        x: 240
+        x: 384
         y: 0
-        width: 80
-        height: 80
+        width: 128
+        height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b08ddcffb055b3429687e5b6182fea1
-      internalID: -2039120956
+      spriteID: c57034d53d7f9f240b68b8caab95e0f4
+      internalID: 825694813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_4
+      name: Boom_4
       rect:
         serializedVersion: 2
-        x: 320
+        x: 512
         y: 0
-        width: 80
-        height: 80
+        width: 128
+        height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3541de0e2b75aa4099fb5dbee5d545a
-      internalID: -1074692367
+      spriteID: 3f420d764235b8244891b12fcb576c02
+      internalID: -269181173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boom_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5953d454b754e458d12d8349340a3d
+      internalID: -1506971787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boom_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5017d81e3b378d244910bf787cf61a59
+      internalID: 1585130497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boom_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35051038eccc1f945b345ff1c8e36f73
+      internalID: -1676160420
       vertices: []
       indices: 
       edges: []
@@ -212,11 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Attack_0: -1772571995
-      Attack_1: -1533072550
-      Attack_2: 618101207
-      Attack_3: -2039120956
-      Attack_4: -1074692367
+      Boom_0: 2090318988
+      Boom_1: -713319545
+      Boom_2: -1241084525
+      Boom_3: 825694813
+      Boom_4: -269181173
+      Boom_5: -1506971787
+      Boom_6: 1585130497
+      Boom_7: -1676160420
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
