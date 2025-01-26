@@ -33,6 +33,13 @@ public class playermovement : MonoBehaviour, Takedamages
     [Range(0f, 1f)]
     public float groundDecay;
     public bool grounded;
+
+    Musichandling musicmanager;
+
+    private void Awake()
+    {
+        musicmanager = GameObject.FindGameObjectWithTag("Music").GetComponent<Musichandling>();
+    }
     void Start()
     {
         currHp = Hp;
@@ -133,6 +140,7 @@ public class playermovement : MonoBehaviour, Takedamages
 
     foreach(Collider2D enemyGameObject in enemy)
         {
+            musicmanager.Playmusic(musicmanager.Boss);
             Debug.Log("hit enemy!");
             //enemyGameObject.GetComponent<Enemy>().health -= damage;
             enemyGameObject.GetComponent<Takedamages>().Takedamages(damage);
