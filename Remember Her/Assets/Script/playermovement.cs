@@ -17,6 +17,7 @@ public class playermovement : MonoBehaviour, Takedamages
     [SerializeField] bool onPer;
     [SerializeField] bool onGua;
     [SerializeField] float DurationGua;
+    bool sucper = false;
 
     bool isattacking = false;
     public GameObject attackpoint;
@@ -58,7 +59,7 @@ public class playermovement : MonoBehaviour, Takedamages
         if (Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("10 damage");
-            this.Takedamages(10);
+            StartCoroutine(EnemyAttack());
         }
 
         if(Input.GetMouseButtonDown(1))
@@ -151,28 +152,39 @@ public class playermovement : MonoBehaviour, Takedamages
 
     public void Takedamages(float damage)
     {
-        /*if (onPer)
+        if (sucper)
         {
-
+            damage = 0;
+            currHp -= damage;
+            sucper = false;
         }
-        if (onGua)
+        else if (onGua)
         {
-            float chipp = damage * (3 / 100);
+            float chipp = damage * 0.3f;
+            Debug.Log(chipp);
+            currHp -= chipp;
+            if (currHp > 0 && damage > 0)
+            {
+                Animator.SetTrigger("Attacked");
+            }
+            else
+            {
+                Animator.SetBool("isded", true);
+            }
         }
         else
         {
             currHp -= damage;
-        }*/
-
-        currHp -= damage;
-        if (currHp > 0)
-        {
-            Animator.SetTrigger("Attacked");
+            if (currHp > 0 && damage > 0)
+            {
+                Animator.SetTrigger("Attacked");
+            }
+            else
+            {
+                Animator.SetBool("isded", true);
+            }
         }
-        else
-        {
-            Animator.SetBool("isded", true);
-        }
+        
     }
 
     public void endblocking()
@@ -182,7 +194,7 @@ public class playermovement : MonoBehaviour, Takedamages
     IEnumerator CountP()
     {
         onPer = true;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         onPer = false;
     }
     IEnumerator CountGuard()
@@ -190,5 +202,34 @@ public class playermovement : MonoBehaviour, Takedamages
         onGua = true;
         yield return new WaitForSeconds(DurationGua);
         onGua = false;
+    }
+    IEnumerator EnemyAttack()
+    {
+        yield return new WaitForSeconds(1);
+        Debug.Log("Enemy Attack 10 dmg");
+        this.Takedamages(10);
+        if (onGua)
+        {
+            if (onPer)
+            {
+                Animator.SetBool("Perfect", true);
+                sucper = true;
+                Debug.Log("P G");
+            }
+            else if (!onPer)
+            {
+
+                Debug.Log("N G");
+            }
+        }
+        else
+        {
+            Debug.Log("C't bloack");
+        }
+    }
+
+    public void unperfect()
+    {
+        Animator.SetBool("Perfect", false);
     }
 }
